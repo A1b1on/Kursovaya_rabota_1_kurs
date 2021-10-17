@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>citys.txt</file>
+        <file>ico/add.png</file>
+        <file>ico/chbx.png</file>
+        <file>ico/del.png</file>
+        <file>ico/double.png</file>
+        <file>ico/once.png</file>
+        <file>ico/pause.png</file>
+        <file>ico/rand.png</file>
+        <file>ico/Search.png</file>
+        <file>ico/sort.png</file>
+        <file>ico/triple.png</file>
+    </qresource>
+    <qresource prefix="/ico"/>
+    <qresource prefix="/fonts">
+        <file>fonts/lcd.ttf</file>
+        <file>fonts/PixelTime.ttf</file>
+        <file>fonts/RetroGaming.ttf</file>
+    </qresource>
+</RCC>

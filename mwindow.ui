@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MWindow</class>
+ <widget class="QMainWindow" name="MWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>905</width>
+    <height>677</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(186, 186, 186);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>871</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border : 5px solid black;
+	border-bottom: 5px solid white;
+	border-right: 5px solid white;
+background-color:rgb(153, 153, 153);</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>847</width>
+       <height>490</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="DelLast">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>590</y>
+      <width>141</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border : 4px solid white;
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
+}
+QPushButton:pressed{ 
+	border : 4px solid black;
+	border-bottom: 4px solid white;
+	border-right: 4px solid white;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Останнє</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <disabledoff>:/ico/del.png</disabledoff>
+     </iconset>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Pause">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>530</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:release{
+	border : 4px solid white;
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
+}
+QPushButton{ 
+	border : 4px solid black;
+	border-bottom: 4px solid white;
+	border-right: 4px solid white;
+}
+QPushButton:pressed{ 
+	border : 4px solid black;
+	border-bottom: 4px solid white;
+	border-right: 4px solid white;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <disabledoff>:/ico/pause.png</disabledoff>
+     </iconset>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>530</y>
+      <width>200</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{border: 4px solid black;}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>-1</y>
+       <width>201</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="Date_2">
+        <property name="minimumSize">
+         <size>
+          <width>39</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>195</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Serif</family>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">	border : 5px solid black;
+	border-bottom: 5px solid white;
+	border-right: 5px solid white;
+background-color:rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>май 09 2021</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Time_2">
+        <property name="maximumSize">
+         <size>
+          <width>195</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Serif</family>
+          <pointsize>19</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">	border : 5px solid black;
+	border-bottom: 5px solid white;
+	border-right: 5px solid white;
+background-color:rgb(204, 204, 204);</string>
+        </property>
+        <property name="text">
+         <string>12:09:67</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Search">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>590</y>
+      <width>141</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border : 4px solid white;
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
+}
+QPushButton:pressed{ 
+	border : 4px solid black;
+	border-bottom: 4px solid white;
+	border-right: 4px solid white;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Пошук</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <disabledoff>:/ico/Search.png</disabledoff>
+     </iconset>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SortBy">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>550</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border : 4px solid white;
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
+}
+QPushButton:pressed{ 
+	border : 4px solid black;
+	border-bottom: 4px solid white;
+	border-right: 4px solid white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Сортувати за:</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <disabledoff>:/ico/sort.png</disabledoff>
+     </iconset>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Play">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>530</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border : 4px solid white;
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
+}
+QPushButton:pressed{ 
+	border : 4px solid black;
+	border-bottom: 4px solid white;
+	border-right: 4px solid white;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <disabledoff>:/ico/once.png</disabledoff>
+     </iconset>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RandomBnt">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>530</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border : 4px solid white;
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
+}
+QPushButton:pressed{ 
+	border : 4px solid black;
+	border-bottom: 4px solid white;
+	border-right: 4px solid white;
+}</string>
+    </property>
+    <property name="text">
+     <string>(+) Випадкове</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/ico/rand.png</normaloff>:/ico/rand.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>366</x>
+      <y>520</y>
+      <width>115</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Швидкість:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddNew">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>590</y>
+      <width>161</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border : 4px solid white;
+	border-bottom: 4px solid black;
+	border-right: 4px solid black;
+}
+QPushButton:pressed{ 
+	border : 4px solid black;
+	border-bottom: 4px solid white;
+	border-right: 4px solid white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Додати нове</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <disabledoff>:/ico/add.png</disabledoff>
+     </iconset>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="SpeedSpin">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>550</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border : 3px solid black;
+	border-bottom: 3px solid white;
+	border-right: 3px solid white;
+	background-color:rgb(204, 204, 204);
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::UpDownArrows</enum>
+    </property>
+    <property name="minimum">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>1000.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>1.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>600</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border : 3px solid black;
+	border-bottom: 3px solid white;
+	border-right: 3px solid white;
+	background-color:rgb(204, 204, 204);
+font: 75 14pt &quot;MS Serif&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Дата</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Час</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Місто №1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Місто №2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Перон</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>905</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Serif</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(213, 213, 213);</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>файл</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>По заданию</string>
+    </property>
+    <addaction name="action_3"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>Записати</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Serif</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Зчитати</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Полиморфизм</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
